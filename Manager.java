@@ -46,14 +46,14 @@ public class Manager implements Food{
 
 
 
-
+	@Override
 	public void password() { //관리자 비밀번호 입력화면
 		int comparition = 1;
 		for(int i=0; i < comparition; i++) {
 			System.out.println("패스워드를 입력해주세요.");
 			System.out.print("입력 >");
 			int pw = Business.sc.nextInt();
-			if(password == pw) {
+			if(managerPassword == pw) {
 				System.out.println("Manager Login Complete");
 				managerMode();
 			}else {
@@ -89,6 +89,8 @@ public class Manager implements Food{
 		default : System.out.println("다시 입력해주세요"); break;
 		}
 	}
+	
+	@Override
 	public void entering() { //메뉴 입고화면
 		boolean run = true;
 		int select = 0;
@@ -191,6 +193,7 @@ public class Manager implements Food{
 		}//while문 끝
 	}
 
+	@Override
 	public void delete() { //메뉴 삭제 화면
 		boolean run = true;
 
@@ -282,7 +285,7 @@ public class Manager implements Food{
 		}//end while
 	}//end delete
 
-
+	@Override
 	public void customer() { //고객 관리 화면
 		System.out.println("                  [ 고객 관리  ]                      ");
 		System.out.println("------------------------------------------------------");
@@ -299,6 +302,7 @@ public class Manager implements Food{
 	}
 
 
+	@Override
 	public void search() { //입고된 메뉴 조회 화면
 
 		int i;
