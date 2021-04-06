@@ -369,7 +369,7 @@ public class Buyer extends Manager{
 
 	}
 
-	public static void Search() { //고객 조회화면
+	public static void buyerSearch() { //고객 조회화면
 
 		System.out.print("고객님의 휴대폰번호 뒷자리 4개를 입력해 주세요. >");
 		customerTel = Business.sc.next();
