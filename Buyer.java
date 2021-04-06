@@ -55,7 +55,7 @@ public class Buyer extends Manager{
 		switch(select) {
 		case 1: buyerNumber(); break;
 		case 2: buyerPurchase(); break;
-		case 3: Search(); break;
+		case 3: buyerSearch(); break;
 		case 4: manager.start(); break;
 		default : System.out.println("다시 입력해주세요"); buyerMode(); break;
 		}
