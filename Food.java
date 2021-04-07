@@ -3,7 +3,7 @@ package team4;
 public interface Food {
 	
 	
-	static int password = 1234; //관리자 비밀번호 상수
+	static int managerPassword = 1234; //관리자 비밀번호 상수
 	
 	
 	default void search() {
